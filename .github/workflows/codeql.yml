@@ -111,7 +111,7 @@ jobs:
     - name: Compile sketch
       id: compile_sketch
       run:
-        arduino-cli compile --fqbn ${{ matrix.fqbn }} --library=$GITHUB_WORKSPACE --build-property="compiler.cpp.extra_flags=${{ matrix.compilerflag }}" ${{ matrix.boardurl }} --build-property="${{ matrix.build_param1 }}" --output-dir=$GITHUB_WORKSPACE $GITHUB_WORKSPACE/examples/MAX14521E_Example1_Blink/MAX14521E_Example1_Blink.ino --warnings=all
+        arduino-cli compile --fqbn ${{ matrix.fqbn }} --library=$GITHUB_WORKSPACE --build-property="compiler.cpp.extra_flags=${{ matrix.compilerflag }}" ${{ matrix.boardurl }} --build-property="${{ matrix.build_param1 }}" --output-dir=$GITHUB_WORKSPACE $GITHUB_WORKSPACE/examples/EG25-G_Example1_GNSS_GPRMC/EG25-G_Example1_GNSS_GPRMC.ino --warnings=all
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2

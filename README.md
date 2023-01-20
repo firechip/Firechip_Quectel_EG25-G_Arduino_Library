@@ -1,6 +1,13 @@
 Firechip Quectel EG25-G Arduino Library
 ==============================
 
+[![Report Size Deltas](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/report-size-deltas.yml/badge.svg)](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/report-size-deltas.yml)
+[![Compile Examples](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/compile-examples.yml/badge.svg)](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/compile-examples.yml)
+[![CodeQL](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/codeql.yml/badge.svg)](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/codeql.yml)
+[![Check Arduino](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/check-arduino.yml/badge.svg)](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/check-arduino.yml)
+[![Spell Check](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/spell-check.yml/badge.svg)](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/spell-check.yml)
+
+
 <table class="table table-hover table-striped table-bordered">
     <tr align="center">
       <td><a href="https://firechip.dev/products/17272"><img src="https://cdn.firechip.com/assets/parts/1/6/2/7/9/17272-Firechip_MicroMod_Asset_Tracker_Carrier_Board-01a.jpg" alt="MicroMod Asset Tracker Carrier Board"></a></td>

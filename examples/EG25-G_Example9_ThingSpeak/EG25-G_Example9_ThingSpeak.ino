@@ -189,7 +189,7 @@ void loop()
   Serial.print(String(temperature));
   Serial.println(F(" to ThingSpeak"));
         
-  // Send HTTP POST request to /update. The reponse will be written to post_response.txt in the EG25's file system
+  // Send HTTP POST request to /update. The response will be written to post_response.txt in the EG25's file system
   myEG25.sendHTTPPOSTdata(0, "/update", "post_response.txt", httpRequestData, EG25_G_HTTP_CONTENT_APPLICATION_X_WWW);
 
 //---
@@ -201,7 +201,7 @@ void loop()
 //  Serial.print(String(temperature));
 //  Serial.println(F(" to ThingSpeak using HTTP GET"));
 //        
-//  // Send HTTP POST request to /update. The reponse will be written to post_response.txt in the EG25's file system
+//  // Send HTTP POST request to /update. The response will be written to post_response.txt in the EG25's file system
 //  myEG25.sendHTTPGET(0, path, "post_response.txt");
   
 //---

@@ -93,7 +93,7 @@
 #define EG25_G_POLL_DELAY 1
 #define EG25_G_SOCKET_WRITE_TIMEOUT 10000
 
-// ## Suported AT Commands
+// ## Supported AT Commands
 // ### General
 const char EG25_G_COMMAND_AT[] = "AT";           // AT "Test"
 const char EG25_G_COMMAND_ECHO[] = "E";          // Local Echo

@@ -106,7 +106,7 @@ void loop()
   {
     if ((used != previousUsed) || printReadMessages) // Has a new message arrived? Or was the delete menu opened?
     {
-      Serial.print(F("\r\nNumber of used memory locations: "));
+      Serial.print(F("Number of used memory locations: "));
       Serial.println(used);
       Serial.print(F("Total number of memory locations: "));
       Serial.println(total);

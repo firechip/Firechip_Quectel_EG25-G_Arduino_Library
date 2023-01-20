@@ -52,7 +52,7 @@ String registrationString[] =
   "Registered, roaming (SMS only)",         // 7
   "Registered, emergency service only",     // 8
   "Registered, home, CSFB not preferred",   // 9
-  "Registered, roaming, CSFB not prefered"  // 10
+  "Registered, roaming, CSFB not preferred"  // 10
 };
 
 // Network operator can be set to e.g.:

@@ -37,7 +37,7 @@ def handle_echo(client_connection, client_address, port):
         client_connection.close()
 
 # This function opens a socket and listens on specified port. As soon as a
-# connection is received, it is transfered to another socket so that the main
+# connection is received, it is transferred to another socket so that the main
 # socket is not blocked and can accept new clients.
 def listen(host, port):
     # Create the main socket (IPv4, TCP)

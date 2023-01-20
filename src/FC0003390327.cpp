@@ -1373,8 +1373,8 @@ EG25_G_error_t EG25_G::getUtimeConfiguration(int32_t *offsetNanoseconds, int32_t
   char *command;
   char *response;
 
-  int32_t ons;
-  int32_t os;
+  int32_t osns;
+  int32_t oss;
 
   command = eg25_g_calloc_char(strlen(EG25_G_GNSS_TIME_CONFIGURATION) + 2);
   if (command == NULL)
@@ -1398,14 +1398,14 @@ EG25_G_error_t EG25_G::getUtimeConfiguration(int32_t *offsetNanoseconds, int32_t
     char *searchPtr = strstr(response, "+UTIMECFG:");
     if (searchPtr != NULL)
 #if defined(ARDUINO_ARCH_ESP32) || defined(ARDUINO_ARCH_ESP8266)
-      scanned = sscanf(searchPtr, "+UTIMECFG:%d,%d\r\n", &ons, &os);
+      scanned = sscanf(searchPtr, "+UTIMECFG:%d,%d\r\n", &osns, &oss);
 #else
-      scanned = sscanf(searchPtr, "+UTIMECFG:%ld,%ld\r\n", &ons, &os);
+      scanned = sscanf(searchPtr, "+UTIMECFG:%ld,%ld\r\n", &osns, &oss);
 #endif
     if (scanned == 2)
     {
-      *offsetNanoseconds = ons;
-      *offsetSeconds = os;
+      *offsetNanoseconds = osns;
+      *offsetSeconds = oss;
     }
     else
       err = EG25_G_ERROR_UNEXPECTED_RESPONSE;
@@ -2425,7 +2425,7 @@ EG25_G::EG25_G_gpio_mode_t EG25_G::getGpioMode(EG25_G_gpio_t gpio)
   }
 
   sprintf(gpioChar, "%d", gpio);          // Convert GPIO to char array
-  gpioStart = strstr(response, gpioChar); // Find first occurence of GPIO in response
+  gpioStart = strstr(response, gpioChar); // Find first occurrence of GPIO in response
 
   free(command);
   free(response);
@@ -4124,7 +4124,7 @@ EG25_G_error_t EG25_G::readMQTT(int* pQos, String* pTopic, uint8_t *readDest, in
   }
   
   // Note to self: if the file contents contain "OK\r\n" sendCommandWithResponse will return true too early...
-  // To try and avoid this, look for \"\r\n\r\nOK\r\n there is a extra \r\n beetween " and the the standard \r\nOK\r\n
+  // To try and avoid this, look for \"\r\n\r\nOK\r\n there is a extra \r\n between " and the the standard \r\nOK\r\n
   const char mqttReadTerm[] = "\"\r\n\r\nOK\r\n";
   sprintf(command, "%s=%d,%d", EG25_G_MQTT_COMMAND, EG25_G_MQTT_COMMAND_READ, 1);
   err = sendCommandWithResponse(command, mqttReadTerm, response,
@@ -4172,7 +4172,7 @@ EG25_G_error_t EG25_G::readMQTT(int* pQos, String* pTopic, uint8_t *readDest, in
       if (data_length > readLength) {
         data_length = readLength;
         if (_printDebug == true) {
-          _debugPort->print(F("readMQTT: error: trucate message"));
+          _debugPort->print(F("readMQTT: error: truncate message"));
         }
         err = EG25_G_ERROR_OUT_OF_MEMORY;
       }
@@ -6220,7 +6220,7 @@ bool EG25_G::parseGPRMCString(char *rmcString, PositionData *pos,
   }
   ptr = search + 1;
 
-  // Find latitude hemishpere
+  // Find latitude hemisphere
   search = readDataUntil(tempData, TEMP_NMEA_DATA_SIZE, ptr, ',');
   if ((search != NULL) && (search == ptr + 1))
   {
@@ -6245,7 +6245,7 @@ bool EG25_G::parseGPRMCString(char *rmcString, PositionData *pos,
   }
   ptr = search + 1;
 
-  // Find longitude hemishpere
+  // Find longitude hemisphere
   search = readDataUntil(tempData, TEMP_NMEA_DATA_SIZE, ptr, ',');
   if ((search != NULL) && (search == ptr + 1))
   {

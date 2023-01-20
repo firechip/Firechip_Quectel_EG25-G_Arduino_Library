@@ -118,7 +118,7 @@ void setup()
   // Now enable SIM state reporting for states 0 to 6 (by setting the reporting mode LSb)
   if (myEG25.setSIMstateReportingMode(1) == EG25_G_SUCCESS)
     Serial.println("SIM state reports requested...");
-  // You can disable the SIM staus reports again by calling assetTracker.setSIMstateReportingMode(0)
+  // You can disable the SIM status reports again by calling assetTracker.setSIMstateReportingMode(0)
 }
 
 void loop()

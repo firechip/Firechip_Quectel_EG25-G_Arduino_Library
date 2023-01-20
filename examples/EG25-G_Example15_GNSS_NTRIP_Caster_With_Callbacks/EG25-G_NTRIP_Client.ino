@@ -219,7 +219,7 @@ bool checkConnection(int theSocket, bool connectionIsOpen)
 {
   if ((theSocket >= 0) && connectionIsOpen) // Check that the connection is still open
   {
-    ; // Nothing to do here. The RTCM is pushed to the GNSS by the callabck.
+    ; // Nothing to do here. The RTCM is pushed to the GNSS by the callback.
   }
   else
   {

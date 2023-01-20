@@ -38,8 +38,8 @@
 #include <FC0003390327.h> //Click here to get the library: http://librarymanager/All#Firechip_Quectel_EG25-G_Arduino_Library
 
 // Create a SoftwareSerial object to pass to the EG25-G library
-// Note: we need to call eg25Serial.begin and eg25Serial.end in setup() - see below for details
-SoftwareSerial eg25Serial;
+// Note: we need to call atSerial.begin and atSerial.end in setup() - see below for details
+SoftwareSerial atSerial;
 
 // Create a EG25_G object to use throughout the sketch
 // Usually we would tell the library which GPIO pin to use to control the EG25 power (see below),
@@ -96,14 +96,14 @@ void setup()
   myEG25.invertPowerPin(true);
 
   // ESPSoftwareSerial does not like repeated .begin's without a .end in between.
-  // We need to .begin and .end the eg25Serial port here, before the myEG25.begin, to set up the pin numbers etc.
+  // We need to .begin and .end the atSerial port here, before the myEG25.begin, to set up the pin numbers etc.
   // E.g. to use: 57600 baud; 8 databits, no parity, 1 stop bit; RXD on pin 33; TXD on pin 32; no inversion.
-  Serial.println(F("Configuring SoftwareSerial eg25Serial"));
-  eg25Serial.begin(57600, SWSERIAL_8N1, 33, 32, false);
-  eg25Serial.end();
+  Serial.println(F("Configuring SoftwareSerial atSerial"));
+  atSerial.begin(57600, SWSERIAL_8N1, 33, 32, false);
+  atSerial.end();
 
   // Initialize the EG25
-  if (myEG25.begin(eg25Serial, 57600) )
+  if (myEG25.begin(atSerial, 57600) )
   {
     Serial.println(F("EG25-G connected!"));
   }

@@ -21,10 +21,10 @@
 #include <FC0003390327.h> //Click here to get the library: http://librarymanager/All#Firechip_Quectel_EG25-G_Arduino_Library
 
 // Uncomment the next line to connect to the EG25-G using hardware Serial1
-#define eg25Serial Serial1
+#define atSerial Serial1
 
 // Uncomment the next line to create a SoftwareSerial object to pass to the EG25-G library instead
-//SoftwareSerial eg25Serial(8, 9);
+//SoftwareSerial atSerial(8, 9);
 
 // Create a EG25_G object to use throughout the sketch
 // Usually we would tell the library which GPIO pin to use to control the EG25 power (see below),
@@ -61,7 +61,7 @@ void setup()
   myEG25.invertPowerPin(true); 
 
   // Initialize the EG25
-  if (myEG25.begin(eg25Serial, 9600) )
+  if (myEG25.begin(atSerial, 9600) )
   {
     Serial.println(F("EG25-G connected!"));
   }

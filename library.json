@@ -1,0 +1,191 @@
+{
+  "name": "FC0003390327",
+  "version": "1.0.0",
+  "description": "Library for the Quectel EG25-G LTE",
+  "keywords": "EG25-G, EC25, LTE, Module, UART",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library.git"
+  },
+  "authors": [
+    {
+      "name": "Alexander Salas Bastidas",
+      "email": "ajsb85@firechip.dev",
+      "url": "https://firechip.dev"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://firechip.dev/",
+  "frameworks": "arduino",
+  "platforms": "*",
+  "headers": "FC0003390327.h",
+  "examples": [
+    {
+      "name": "GNSS GPRMC",
+      "base": "examples/EG25-G_Example1_GNSS_GPRMC",
+      "files": [
+        "EG25-G_Example1_GNSS_GPRMC.ino"
+      ]
+    },
+    {
+      "name": "Identification",
+      "base": "examples/EG25-G_Example2_Identification",
+      "files": [
+        "EG25-G_Example2_Identification.ino"
+      ]
+    },
+    {
+      "name": "Identification - using ESPSoftwareSerial",
+      "base": "examples/EG25-G_Example2_Identification_ESPSoftwareSerial",
+      "files": [
+        "EG25-G_Example2_Identification_ESPSoftwareSerial.ino"
+      ]
+    },
+    {
+      "name": "Network Info",
+      "base": "examples/EG25-G_Example3_NetworkInfo",
+      "files": [
+        "EG25-G_Example3_NetworkInfo.ino"
+      ]
+    },
+    {
+      "name": "Register Operator",
+      "base": "examples/EG25-G_Example4_RegisterOperator",
+      "files": [
+        "EG25-G_Example4_RegisterOperator.ino"
+      ]
+    },
+    {
+      "name": "Receive SMS",
+      "base": "examples/EG25-G_Example5_ReceiveSMS",
+      "files": [
+        "EG25-G_Example5_ReceiveSMS.ino"
+      ]
+    },
+    {
+      "name": "Send SMS",
+      "base": "examples/EG25-G_Example6_SendSMS",
+      "files": [
+        "EG25-G_Example6_SendSMS.ino"
+      ]
+    },
+    {
+      "name": "Configure Packet Switched Data",
+      "base": "examples/EG25-G_Example7_ConfigurePacketSwitchedData",
+      "files": [
+        "EG25-G_Example7_ConfigurePacketSwitchedData.ino"
+      ]
+    },
+    {
+      "name": "Ping",
+      "base": "examples/EG25-G_Example8_Ping",
+      "files": [
+        "EG25-G_Example8_Ping.ino"
+      ]
+    },
+    {
+      "name": "ThingSpeak (HTTP POST / GET)",
+      "base": "examples/EG25-G_Example9_ThingSpeak",
+      "files": [
+        "EG25-G_Example9_ThingSpeak.ino"
+      ]
+    },
+    {
+      "name": "Socket 'Ping Pong' - TCP Data Transfers",
+      "base": "examples/EG25-G_Example10_SocketPingPong",
+      "files": [
+        "EG25-G_Example10_SocketPingPong.ino"
+      ]
+    },
+    {
+      "name": "Socket 'Ping Pong' - Binary TCP Data Transfers",
+      "base": "examples/EG25-G_Example10_SocketPingPong_BinaryTCP",
+      "files": [
+        "EG25-G_Example10_SocketPingPong_BinaryTCP.ino"
+      ]
+    },
+    {
+      "name": "Socket 'Ping Pong' - TCP Data Transfers on multiple sockets",
+      "base": "examples/EG25-G_Example10_SocketPingPong_MultipleTCP",
+      "files": [
+        "EG25-G_Example10_SocketPingPong_MultipleTCP.ino"
+      ]
+    },
+    {
+      "name": "Socket 'Ping Pong' - Binary UDP Data Transfers on multiple sockets",
+      "base": "examples/EG25-G_Example10_SocketPingPong_MultipleUDP",
+      "files": [
+        "EG25-G_Example10_SocketPingPong_MultipleUDP.ino"
+      ]
+    },
+    {
+      "name": "Clock",
+      "base": "examples/EG25-G_Example11_Clock",
+      "files": [
+        "EG25-G_Example11_Clock.ino"
+      ]
+    },
+    {
+      "name": "Quectel AssistNow Online",
+      "base": "examples/EG25-G_Example12_AssistNowOnline",
+      "files": [
+        "EG25-G_Example12_AssistNowOnline.ino",
+        "EG25-G_AssistNow_Online.ino",
+        "secrets.h"
+      ]
+    },
+    {
+      "name": "Set Clock With NTP",
+      "base": "examples/EG25-G_Example13_SetClockWithNTP",
+      "files": [
+        "EG25-G_Example13_SetClockWithNTP.ino",
+        "EG25-G_NTP.ino"
+      ]
+    },
+    {
+      "name": "Quectel AssistNow Offline",
+      "base": "examples/EG25-G_Example14_AssistNowOffline",
+      "files": [
+        "EG25-G_Example14_AssistNowOffline.ino",
+        "EG25-G_AssistNow_Offline.ino",
+        "EG25-G_NTP.ino",
+        "secrets.h"
+      ]
+    },
+    {
+      "name": "Quectel GNSS NTRIP Caster Client",
+      "base": "examples/EG25-G_Example15_GNSS_NTRIP_Caster_With_Callbacks",
+      "files": [
+        "EG25-G_Example15_GNSS_NTRIP_Caster_With_Callbacks.ino",
+        "EG25-G_Callbacks.ino",
+        "EG25-G_NTRIP_Client.ino",
+        "GNSS_Callbacks.ino",
+        "secrets.h",
+        "Utils.ino"
+      ]
+    },
+    {
+      "name": "Quectel GNSS NTRIP Caster Client - Polling",
+      "base": "examples/EG25-G_Example16_GNSS_NTRIP_Caster__Polling",
+      "files": [
+        "EG25-G_Example16_GNSS_NTRIP_Caster__Polling.ino",
+        "EG25-G_NTRIP_Client.ino",
+        "secrets.h"
+      ]
+    }
+  ],
+  "export": {
+    "exclude": [
+      ".gitattributes",
+      ".gitignore",
+      ".editorconfig",
+      ".codespellrc",
+      ".github/*",
+      "keywords.txt",
+      "SUPPORT.md",
+      "SECURITY.md",
+      "CONTRIBUTING.md",
+      "CODE_OF_CONDUCT.md"
+    ]
+  }
+}

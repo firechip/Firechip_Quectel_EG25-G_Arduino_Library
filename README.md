@@ -1,24 +1,24 @@
-SparkFun u-blox SARA-R5 Arduino Library
+Firechip Quectel EG25-G Arduino Library
 ==============================
 
 <table class="table table-hover table-striped table-bordered">
     <tr align="center">
-      <td><a href="https://www.sparkfun.com/products/17272"><img src="https://cdn.sparkfun.com/assets/parts/1/6/2/7/9/17272-SparkFun_MicroMod_Asset_Tracker_Carrier_Board-01a.jpg" alt="MicroMod Asset Tracker Carrier Board"></a></td>
-      <td><a href="https://www.sparkfun.com/products/18031"><img src="https://cdn.sparkfun.com/assets/parts/1/7/2/6/0/18031-SparkFun_LTE_GNSS_Breakout_-_SARA-R5-01.jpg" alt="SparkFun LTE GNSS Breakout - SARA-R5"</a></td>
+      <td><a href="https://firechip.dev/products/17272"><img src="https://cdn.firechip.com/assets/parts/1/6/2/7/9/17272-Firechip_MicroMod_Asset_Tracker_Carrier_Board-01a.jpg" alt="MicroMod Asset Tracker Carrier Board"></a></td>
+      <td><a href="https://firechip.dev/products/18031"><img src="https://cdn.firechip.com/assets/parts/1/7/2/6/0/18031-Firechip_LTE_GNSS_Breakout_-_EG25-G-01.jpg" alt="Firechip LTE GNSS Breakout - EG25-G"</a></td>
     </tr>
     <tr align="center">
-      <td><a href="https://www.sparkfun.com/products/17272">MicroMod Asset Tracker Carrier Board</a></td>
-      <td><a href="https://www.sparkfun.com/products/18031">LTE GNSS Breakout - SARA-R5</a></td>
+      <td><a href="https://firechip.dev/products/17272">MicroMod Asset Tracker Carrier Board</a></td>
+      <td><a href="https://firechip.dev/products/18031">LTE GNSS Breakout - EG25-G</a></td>
     </tr>
 </table>
        
-An Arduino library for the u-blox SARA-R5 LTE-M / NB-IoT modules with secure cloud, as used on the [SparkFun MicroMod Asset Tracker](https://www.sparkfun.com/products/17272) and the [SparkFun LTE GNSS Breakout - SARA-R5](https://www.sparkfun.com/products/18031).
+An Arduino library for the Quectel EG25-G LTE-M / NB-IoT modules with secure cloud, as used on the [Firechip MicroMod Asset Tracker](https://firechip.dev/products/17272) and the [Firechip LTE GNSS Breakout - EG25-G](https://firechip.dev/products/18031).
 
 v1.1 has had a thorough update and includes new features and examples. This library now supports up to 7 simultaneous TCP or UDP sockets. There are new examples to show how to play ping pong with multiple TCP and UDP sockets.
 
-v1.1 also supports binary data transfers correctly. There are new examples showing how you can integrate this library with the [SparkFun u-blox GNSS Arduino Library](https://github.com/sparkfun/SparkFun_u-blox_GNSS_Arduino_Library) and use the SARA-R5 to: download AssistNow Online and Offline data and push it to the GNSS; open a connection to a NTRIP Caster (such as RTK2go, Skylark or Emlid Caster) and push RTK correction data to the GNSS.
+v1.1 also supports binary data transfers correctly. There are new examples showing how you can integrate this library with the [Firechip Quectel GNSS Arduino Library](https://github.com/firechip/Firechip_Quectel_GNSS_Arduino_Library) and use the EG25-G to: download AssistNow Online and Offline data and push it to the GNSS; open a connection to a NTRIP Caster (such as RTK2go, Skylark or Emlid Caster) and push RTK correction data to the GNSS.
 
-You can install this library using the Arduino IDE Library Manager: search for _**SparkFun u-blox SARA-R5**_
+You can install this library using the Arduino IDE Library Manager: search for _**Firechip Quectel EG25-G**_
 
 ## Repository Contents
 
@@ -33,16 +33,16 @@ If you would like to contribute to this library: please do, we truly appreciate 
 
 ## Documentation
 
-* **[Installing an Arduino Library Guide](https://learn.sparkfun.com/tutorials/installing-an-arduino-library)** - Basic information on how to install an Arduino library.
-* **[MicroMod Asset Tracker Hookup Guide](https://learn.sparkfun.com/tutorials/micromod-asset-tracker-carrier-board-hookup-guide)** - Hookup Guide for the MicroMod Asset Tracker Carrier Board.
-* **[MicroMod Asset Tracker Product Repository](https://github.com/sparkfun/MicroMod_Asset_Tracker)** - MicroMod Asset Tracker repository (including hardware files).
-* **[SparkFun LTE GNSS Breakout - SARA-R5 Hookup Guide](https://learn.sparkfun.com/tutorials/lte-gnss-breakout---sara-r5-hookup-guide)** - Hookup Guide for the LTE GNSS Breakout - SARA-R5.
-* **[SparkFun LTE GNSS Breakout - SARA-R5 Product Repository](https://github.com/sparkfun/SparkFun_LTE_GNSS_Breakout_SARA-R510M8S)** - LTE GNSS Breakout - SARA-R5 repository (including hardware files).
+* **[Installing an Arduino Library Guide](https://learn.firechip.com/tutorials/installing-an-arduino-library)** - Basic information on how to install an Arduino library.
+* **[MicroMod Asset Tracker Hookup Guide](https://learn.firechip.com/tutorials/micromod-asset-tracker-carrier-board-hookup-guide)** - Hookup Guide for the MicroMod Asset Tracker Carrier Board.
+* **[MicroMod Asset Tracker Product Repository](https://github.com/firechip/MicroMod_Asset_Tracker)** - MicroMod Asset Tracker repository (including hardware files).
+* **[Firechip LTE GNSS Breakout - EG25-G Hookup Guide](https://learn.firechip.com/tutorials/lte-gnss-breakout---sara-r5-hookup-guide)** - Hookup Guide for the LTE GNSS Breakout - EG25-G.
+* **[Firechip LTE GNSS Breakout - EG25-G Product Repository](https://github.com/firechip/Firechip_LTE_GNSS_Breakout_EG25-G10M8S)** - LTE GNSS Breakout - EG25-G repository (including hardware files).
 * **[LICENSE.md](./LICENSE.md)** - License Information
 
 ## Products that use this library
 
-* **[DEV-17272](https://www.sparkfun.com/products/17272)** - MicroMod Asset Tracker
-* **[GPS-18031](https://www.sparkfun.com/products/18031)** - SparkFun LTE GNSS Breakout - SARA-R5
+* **[DEV-17272](https://firechip.dev/products/17272)** - MicroMod Asset Tracker
+* **[GPS-18031](https://firechip.dev/products/18031)** - Firechip LTE GNSS Breakout - EG25-G
 
-- Your friends at SparkFun.
+- Your friends at Firechip.

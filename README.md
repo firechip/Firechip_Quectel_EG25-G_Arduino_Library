@@ -8,7 +8,7 @@ Firechip Quectel EG25-G Arduino Library
 [![CodeQL](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/codeql.yml/badge.svg)](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/codeql.yml)
 [![Check Arduino](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/check-arduino.yml/badge.svg)](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/check-arduino.yml)
 [![Spell Check](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/spell-check.yml/badge.svg)](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/spell-check.yml)
-
+[![Compile Sketch](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/compile-sketch.yml/badge.svg)](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/compile-sketch.yml)
 
 <table class="table table-hover table-striped table-bordered">
     <tr align="center">

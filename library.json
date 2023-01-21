@@ -1,6 +1,6 @@
 {
   "name": "FC0003390327",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Library for the Quectel EG25-G LTE",
   "keywords": "EG25-G, EC25, LTE, Module, UART",
   "repository": {

@@ -68,7 +68,7 @@ jobs:
             platforms: |
               - name: arduino:samd
             sketch-paths: |
-              - examples/MAX14521E_Example1_Blink
+              - examples/EG25-G_Example1_GNSS_GPRMC
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -85,7 +85,7 @@ jobs:
             - name: FC0003390327
           sketch-paths: |
             # Sketches to compile for all boards
-            - examples/MAX14521E_Example1_Blink
+            - examples/EG25-G_Example1_GNSS_GPRMC
             # Board-specific sketches
             ${{ matrix.board.sketch-paths }}
           enable-deltas-report: true

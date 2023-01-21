@@ -99,7 +99,26 @@ jobs:
           libraries: |
             - source-path: ./
           sketch-paths: |
-            - examples/SARA-R5_Example10_SocketPingPong
+            - examples/EG25-G_Example1_GNSS_GPRMC
+            - examples/EG25-G_Example2_Identification
+            - examples/EG25-G_Example2_Identification_ESPSoftwareSerial
+            - examples/EG25-G_Example3_NetworkInfo
+            - examples/EG25-G_Example4_RegisterOperator
+            - examples/EG25-G_Example5_ReceiveSMS
+            - examples/EG25-G_Example6_SendSMS
+            - examples/EG25-G_Example7_ConfigurePacketSwitchedData
+            - examples/EG25-G_Example8_Ping
+            - examples/EG25-G_Example9_ThingSpeak
+            - examples/EG25-G_Example10_SocketPingPong
+            - examples/EG25-G_Example10_SocketPingPong_BinaryTCP
+            - examples/EG25-G_Example10_SocketPingPong_MultipleTCP
+            - examples/EG25-G_Example10_SocketPingPong_MultipleUDP
+            - examples/EG25-G_Example11_Clock
+            - examples/EG25-G_Example12_AssistNowOnline
+            - examples/EG25-G_Example13_SetClockWithNTP
+            - examples/EG25-G_Example14_AssistNowOffline
+            - examples/EG25-G_Example15_GNSS_NTRIP_Caster_With_Callbacks
+            - examples/EG25-G_Example16_GNSS_NTRIP_Caster__Polling
           enable-warnings-report: true
           enable-deltas-report: true
           # verbose: true

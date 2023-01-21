@@ -1,7 +1,7 @@
 name: Compile Sketch
 
 on:
-  # - push
+  - push
   - pull_request
 
 
@@ -121,7 +121,7 @@ jobs:
             - examples/EG25-G_Example16_GNSS_NTRIP_Caster__Polling
           enable-warnings-report: true
           enable-deltas-report: true
-          # verbose: true
+          verbose: true
 
     # outputs:
     #   report-artifact-name: ${{ steps.report-artifact-name.outputs.report-artifact-name }}

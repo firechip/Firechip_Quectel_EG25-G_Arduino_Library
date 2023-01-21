@@ -1,4 +1,4 @@
-Firechip Quectel EG25-G Arduino Library
+Firechip - Quectel EG25-G Arduino Library
 ==============================
 
 [![PlatformIO Registry](https://badges.registry.platformio.org/packages/firechip/library/FC0003390327.svg)](https://registry.platformio.org/libraries/firechip/FC0003390327)
@@ -10,48 +10,12 @@ Firechip Quectel EG25-G Arduino Library
 [![Spell Check](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/spell-check.yml/badge.svg)](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/spell-check.yml)
 [![Compile Sketch](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/compile-sketch.yml/badge.svg)](https://github.com/firechip/Firechip_Quectel_EG25-G_Arduino_Library/actions/workflows/compile-sketch.yml)
 
-<table class="table table-hover table-striped table-bordered">
-    <tr align="center">
-      <td><a href="https://firechip.dev/products/17272"><img src="https://cdn.firechip.com/assets/parts/1/6/2/7/9/17272-Firechip_MicroMod_Asset_Tracker_Carrier_Board-01a.jpg" alt="MicroMod Asset Tracker Carrier Board"></a></td>
-      <td><a href="https://firechip.dev/products/18031"><img src="https://cdn.firechip.com/assets/parts/1/7/2/6/0/18031-Firechip_LTE_GNSS_Breakout_-_EG25-G-01.jpg" alt="Firechip LTE GNSS Breakout - EG25-G"</a></td>
-    </tr>
-    <tr align="center">
-      <td><a href="https://firechip.dev/products/17272">MicroMod Asset Tracker Carrier Board</a></td>
-      <td><a href="https://firechip.dev/products/18031">LTE GNSS Breakout - EG25-G</a></td>
-    </tr>
-</table>
-       
-An Arduino library for the Quectel EG25-G LTE-M / NB-IoT modules with secure cloud, as used on the [Firechip MicroMod Asset Tracker](https://firechip.dev/products/17272) and the [Firechip LTE GNSS Breakout - EG25-G](https://firechip.dev/products/18031).
+The Quectel EG25-G is a multi-mode LTE-FDD/LTE-TDD/HSPA+/GSM/GNSS module made by Quectel Wireless Solutions. It is designed to be used in a wide range of IoT and M2M applications, such as smart metering, remote control, tracking, and more.
 
-v1.1 has had a thorough update and includes new features and examples. This library now supports up to 7 simultaneous TCP or UDP sockets. There are new examples to show how to play ping pong with multiple TCP and UDP sockets.
+The EG25-G supports both LTE FDD and LTE TDD bands and it is compliant with 3GPP Release 14. It also supports HSPA+/UMTS and GSM/GPRS networks, which means that it can provide fallback options in case of LTE network unavailability.
 
-v1.1 also supports binary data transfers correctly. There are new examples showing how you can integrate this library with the [Firechip Quectel GNSS Arduino Library](https://github.com/firechip/Firechip_Quectel_GNSS_Arduino_Library) and use the EG25-G to: download AssistNow Online and Offline data and push it to the GNSS; open a connection to a NTRIP Caster (such as RTK2go, Skylark or Emlid Caster) and push RTK correction data to the GNSS.
+Additionally, it supports GPS/GLONASS/Beidou positioning and it has embedded multi-constellation GNSS receiver, which enables easy and precise positioning.
+The module is available in a compact LCC package, measuring only 22.5mm x 30mm x 2.5mm and it is designed to operate in extreme temperature conditions. The module also supports various features such as, USB 2.0, UART, and I2C interfaces, embedded TCP/IP stack, and more.
 
-You can install this library using the Arduino IDE Library Manager: search for _**Firechip Quectel EG25-G**_
+© 2023 Firechip SL.
 
-## Repository Contents
-
-* **/examples** - Example sketches for the library (.ino). Run these from the Arduino IDE.
-* **/src** - Source files for the library (.cpp, .h).
-* **keywords.txt** - Keywords from this library that will be highlighted in the Arduino IDE.
-* **library.properties** - General library properties for the Arduino package manager.
-
-## Contributing
-
-If you would like to contribute to this library: please do, we truly appreciate it, but please follow [these guidelines](./CONTRIBUTING.md). Thanks!
-
-## Documentation
-
-* **[Installing an Arduino Library Guide](https://learn.firechip.com/tutorials/installing-an-arduino-library)** - Basic information on how to install an Arduino library.
-* **[MicroMod Asset Tracker Hookup Guide](https://learn.firechip.com/tutorials/micromod-asset-tracker-carrier-board-hookup-guide)** - Hookup Guide for the MicroMod Asset Tracker Carrier Board.
-* **[MicroMod Asset Tracker Product Repository](https://github.com/firechip/MicroMod_Asset_Tracker)** - MicroMod Asset Tracker repository (including hardware files).
-* **[Firechip LTE GNSS Breakout - EG25-G Hookup Guide](https://learn.firechip.com/tutorials/lte-gnss-breakout---sara-r5-hookup-guide)** - Hookup Guide for the LTE GNSS Breakout - EG25-G.
-* **[Firechip LTE GNSS Breakout - EG25-G Product Repository](https://github.com/firechip/Firechip_LTE_GNSS_Breakout_EG25-G10M8S)** - LTE GNSS Breakout - EG25-G repository (including hardware files).
-* **[LICENSE.md](./LICENSE.md)** - License Information
-
-## Products that use this library
-
-* **[DEV-17272](https://firechip.dev/products/17272)** - MicroMod Asset Tracker
-* **[GPS-18031](https://firechip.dev/products/18031)** - Firechip LTE GNSS Breakout - EG25-G
-
-- Your friends at Firechip.
